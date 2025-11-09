@@ -1,8 +1,8 @@
 <mat-toolbar>
   <span>MovieStore</span>
   <span class="spacer"></span>
-  <button matButton routerLink="add" aria-label="To add a movie">Add Movie
+  <button matButton routerLink="add" aria-label="To add a movie" routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Add Movie
   </button>
-  <button matButton routerLink="" aria-label="To show movie list" autofocus>List Movies
+  <button matButton routerLink="" aria-label="To show movie list" routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">List Movies
   </button>
 </mat-toolbar>
