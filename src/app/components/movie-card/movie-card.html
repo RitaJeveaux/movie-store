@@ -1,9 +1,10 @@
 <mat-card class="movie-card" appearance="outlined">
+
+    <img mat-card-image src="{{ movie.imageLink?? 'assets/default_poster.png' }}" alt="{{ movie.title }} Poster" (error)="movie.imageLink = '/assets/default_poster.png'">
     <mat-card-header>
         <mat-card-title>{{ movie.title }}</mat-card-title>
         <mat-card-subtitle>{{ movie.genre }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="{{ movie.imageLink?? 'assets/default_poster.png' }}" alt="{{ movie.title }} Poster" (error)="movie.imageLink = '/assets/default_poster.png'">
     <mat-card-content>
         <p>
             {{ movie.description }}
@@ -20,7 +21,7 @@
                 edit_square
             </mat-icon>
         </button>
-        <button mat-icon-button (click)="confirmDelete()">
+        <button mat-icon-button>
             <mat-icon>
                 delete
             </mat-icon>

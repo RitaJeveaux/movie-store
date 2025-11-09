@@ -16,6 +16,7 @@ export class MovieList implements OnInit {
 
   ngOnInit() {
     this.movieService.getAll().subscribe((movies: Array<Movie>) => {
+      console.log(movies);
       this.movies = movies;
 
     });

@@ -3,12 +3,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { Movie } from '../../models/movie';
 import { MatIconButton } from '@angular/material/button';
-import { RouterLinkActive } from '@angular/router';
+
 
 
 @Component({
   selector: 'app-movie-card',
-  imports: [MatCardModule, MatIconModule, MatIconButton, RouterLinkActive],
+  imports: [MatCardModule, MatIconModule, MatIconButton],
   templateUrl: './movie-card.html',
   styleUrl: './movie-card.css',
 })

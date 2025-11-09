@@ -1,3 +1,14 @@
 .movie-card {
-  max-width: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card mat-card-content {
+  flex-grow: 1;
+}
+
+.movie-card img {
+  height: 450px;
+  object-fit: cover;
 }
