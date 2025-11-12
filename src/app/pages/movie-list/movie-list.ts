@@ -21,5 +21,7 @@ export class MovieList implements OnInit {
 
     });
   }
-
+  deleteCard(id: string) {
+    this.movies = this.movies.filter((movie) => movie.id !== id);
+  }
 }

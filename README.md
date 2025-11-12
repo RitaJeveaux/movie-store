@@ -1,59 +1,71 @@
-# MovieStore
+# Movie Store
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+Um projeto de catálogo de filmes desenvolvido com Angular para fins de estudo. A aplicação permite aos usuários visualizar uma lista de filmes, adicionar novos filmes ao catálogo e ver detalhes de cada um.
 
-## Development server
+## ✨ Funcionalidades
 
-To start a local development server, run:
+-   Listagem de filmes em formato de cards.
+-   Adição de novos filmes através de um formulário.
+-   Design responsivo utilizando componentes do Angular Material.
+-   Persistência de dados simulada através de um serviço local.
+
+## 🛠️ Tecnologias Utilizadas
+
+-   [Angular](https://angular.io/)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [Angular Material](https://material.angular.io/) para componentes de UI.
+-   HTML5 & CSS3
+
+## 🚀 Como Começar
+
+Siga as instruções abaixo para configurar e executar o projeto em seu ambiente local.
+
+### Pré-requisitos
+
+-   [Node.js](https://nodejs.org/en/) (versão 18.x ou superior)
+-   [Angular CLI](https://angular.io/cli) (versão 20.x ou superior)
+
+### Instalação
+
+1.  Clone o repositório para sua máquina local:
+    ```bash
+    git clone <URL_DO_SEU_REPOSITORIO>
+    ```
+
+2.  Navegue até o diretório raiz do projeto:
+    ```bash
+    cd movie-store
+    ```
+
+3.  Instale as dependências do projeto:
+    ```bash
+    npm install
+    ```
+
+## 🏃‍♀️ Executando a Aplicação
+
+1.  Para iniciar o servidor de desenvolvimento, execute o comando:
+    ```bash
+    npm start
+    ```
+    *Este comando utiliza `ng serve` por baixo dos panos.*
+
+2.  Abra seu navegador e acesse `http://localhost:4200/`. A aplicação será recarregada automaticamente sempre que você salvar uma alteração nos arquivos.
+
+## 📦 Build
+
+Para criar uma versão de produção do projeto, execute o comando:
 
 ```bash
-ng serve
+npm run build
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Os arquivos compilados serão gerados no diretório `dist/movie-store/`.
 
-## Code scaffolding
+## ✅ Testes
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Para executar os testes unitários via [Karma](https://karma-runner.github.io), utilize o comando:
 
 ```bash
-ng generate component component-name
+npm test
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
