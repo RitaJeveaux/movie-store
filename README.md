@@ -69,3 +69,17 @@ Para executar os testes unitários via [Karma](https://karma-runner.github.io), 
 ```bash
 npm test
 ```
+
+admin@admin.com
+admin1234
+
+{
+  "username": "admin",
+  "email": "admin@admin.com",
+  "password": "admin1234"
+}
+{
+  "username": "test",
+  "email": "test@example.com",
+  "password": "test1234"
+}
