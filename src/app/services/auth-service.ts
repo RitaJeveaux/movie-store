@@ -17,6 +17,11 @@ export class AuthService {
     return loggedUser != null;
   }
 
+  getToken(): string | null {
+    const loggedUser = JSON.parse(localStorage.getItem("loggedUser") || "null");
+    return loggedUser?.token || null;
+  }
+
   loginUser(email: string, password: string): Observable<boolean> {
     return this.http.post<LoginResponse>(`${this.API_URL}login`, { email, password })
       .pipe(
