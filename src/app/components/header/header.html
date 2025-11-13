@@ -1,9 +1,9 @@
 <mat-toolbar>
-  <span>Movies Store</span>
+  <span>Movies Online Store</span>
   <span class="spacer"></span>
   <!-- <button matButton routerLink="add" aria-label="To add a movie" routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Add Movie
   </button> -->
-  <button matButton routerLink="" aria-label="To show movie list" routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">List Movies
+  <button matButton routerLink="/movies" aria-label="To show movie list" routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">List Movies
   </button>
   @if (isLoggedIn) {
   <button matButton routerLink="add" routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">
