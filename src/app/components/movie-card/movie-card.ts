@@ -8,9 +8,11 @@ import { MovieDeleteDialog } from '../movie-delete-dialog/movie-delete-dialog';
 import { MovieService } from '../../services/movie-service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-movie-card',
-  imports: [MatCardModule, MatIcon, MatIconButton],
+  imports: [MatCardModule, MatIcon, MatIconButton, RouterModule],
   templateUrl: './movie-card.html',
   styleUrl: './movie-card.css',
 })
